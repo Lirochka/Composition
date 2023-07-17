@@ -42,7 +42,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@color/teal_700"
-        app:layout_constraintBottom_toTopOf="@id/tv_option_1"
+        app:layout_constraintBottom_toTopOf="@id/tv_answers_progress"
         app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintEnd_toStartOf="@id/tv_question"
         app:layout_constraintHorizontal_chainStyle="packed"
@@ -112,8 +112,7 @@
         app:layout_constraintEnd_toStartOf="@id/tv_option_5"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="parent"
-        tools:text="4"
-        />
+        tools:text="4" />
 
     <TextView
         android:id="@+id/tv_option_5"
@@ -143,12 +142,15 @@
         android:id="@+id/tv_answers_progress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/progress_answers"
         android:layout_margin="16dp"
-        app:layout_constraintVertical_chainStyle="spread"
-        app:layout_constraintTop_toBottomOf="@id/tv_left_number"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:text="@string/progress_answers"
         app:layout_constraintBottom_toTopOf="@id/progress_bar"
-        />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_left_number"
+        app:layout_constraintVertical_chainStyle="spread" />
 
     <ProgressBar
         android:id="@+id/progress_bar"
